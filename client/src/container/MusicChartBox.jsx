@@ -6,7 +6,7 @@ class MusicChartBox extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      ChartMusicData: []
+      chartMusicData: []
     }
   }
 
@@ -18,10 +18,9 @@ class MusicChartBox extends React.Component{
       if (request.status !== 200) return
 
       const jsonString = request.responseText
-      const MusicData = JSON.parse(jsonString)
+      const data = JSON.parse(jsonString)
 
-      this.setState({ChartMusicData: MusicData})
-      console.log(MusicData);
+      this.setState({chartMusicData: data.feed.entry})
     }
     request.send()
   }
@@ -29,8 +28,7 @@ class MusicChartBox extends React.Component{
   render(){
     return (
       <div>
-        <h1>Music list goes here</h1>
-        <MusicChartList />
+        <MusicChartList chartMusicData={this.state.chartMusicData}/>
       </div>
     )
   }
