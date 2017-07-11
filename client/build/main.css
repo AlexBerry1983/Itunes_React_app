@@ -1,0 +1,21 @@
+body {
+  background-color: green;
+}
+
+img {
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  color: white;
+}
+
+.songItem {
+  border: 1px solid black;
+}
