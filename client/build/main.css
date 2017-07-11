@@ -6,6 +6,8 @@ img {
   height: 170px;
   width: 170px;
   display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 ul {
