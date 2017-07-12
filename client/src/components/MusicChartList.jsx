@@ -9,13 +9,13 @@ class MusicChartList extends React.Component {
       return<MusicChartItem key={index}
         title={song['im:collection']['im:name'].label}
         artist={song['im:artist'].label}
-        chartPosition={song.category.attributes['im:id']}
+        chartPosition={index + 1}
         image={song['im:image'][2].label}/>
     })
     return (
       <div>
         <h1>Top 20 Chart Tunes July 2017</h1>
-        {musicToRender}
+          {musicToRender}
       </div>
     )
   }

@@ -2,6 +2,11 @@ body {
   background-color: green;
 }
 
+h1 {
+  color: white;
+  font-family: cursive;
+}
+
 img {
   height: 170px;
   width: 170px;
@@ -16,6 +21,7 @@ ul {
 
 li {
   color: white;
+  font-family: cursive;
 }
 
 .songItem {

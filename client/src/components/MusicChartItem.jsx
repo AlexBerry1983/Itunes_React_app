@@ -4,7 +4,7 @@ export const MusicChartItem = (props) => {
   return (
     <div className="songItem">
       <img className="img" src={props.image}/>
-      <ul> 
+      <ul>
         <li>Title: {props.title}</li>
         <li>Artist: {props.artist}</li>
         <li>Chart Position: {props.chartPosition}</li>
